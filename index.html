@@ -6,8 +6,7 @@
 
         <script type="text/javascript">
         
-        function odliczanie()
-        {
+        (function odliczanie(){
 
         var dzisiaj = new Date();
 
@@ -26,14 +25,10 @@
 
         document.getElementById("zegar").innerHTML = dzien+"/"+miesiac+"/"+rok+"/"+" | "+godzina+":"+minuta+":"+sekunda
 
-        setTimeout(function()
-        {
-        odswiezanie()
-        } 1000);
-    }());
-    
-
-        }
+        setTimeout(function(){
+        odliczanie()
+        }, 1000)
+    }
 
 
 
